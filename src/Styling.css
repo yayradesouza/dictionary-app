@@ -1,0 +1,558 @@
+/* mobile view*/
+@media screen and (max-width: 480px ) {
+.Banner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+/*    padding: 10%, 10%; */
+}    
+
+.displayForm {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px; 
+    margin-top: 5%;
+    height: 40px;
+    align-items: center;
+}
+
+.searchText {
+    width: 80%;
+    text-decoration-color: #2d2d2d;
+    height: 20px;
+    border:none;
+    margin-left: 10px;
+    background-color: #f4f4f4;
+    /* background-color: #00c853; */
+    
+}
+
+.lang {
+
+    padding-right: 10px ;
+}
+
+.lang_Option {
+    padding-right: 20px;
+}
+
+.Menu {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/* .dummy_line {
+    height:1px;
+    background-color: grey;
+} */
+
+.synonyms {
+    margin-left: 20px ;
+ }
+
+ .syn_line {
+    margin-bottom: 20px;
+ }
+
+ .meaning_list {
+    
+    padding-left: 20px ;
+ }
+
+ .keyboard {
+    width: 100%;
+
+
+}
+.word_display {
+    width: 100%;
+    /* padding-left: 2px;
+    padding-right: 2px; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.searchLogo {
+    position: relative;
+    padding-right: 10px;
+ }
+ 
+ .description { 
+     font-style: italic;
+     width: 100%;
+
+ }
+
+ .toggle_bar {
+    width: 40px;
+    height: 20px;
+    background-color: grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 5px;
+ }
+
+.toggled_bar {
+    width: 40px;
+    height: 20px;
+    background-color: #a445ed;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 5px;
+}
+
+.untoggled_bar {
+    width: 40px;
+    height: 20px;
+    background-color: grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 5px;
+}
+
+ .toggle_circle {
+    color:white;
+    height: 40px;
+ }
+
+ .toggled {
+    color:white;
+    height: 20px;
+    padding-left: 23px;
+ }
+
+
+
+
+
+
+/* styling below is for toggle*/
+/* label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    padding-left: 5px;
+} */
+
+.Toggle_input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2c3e50;
+    transition: 0.3s;
+    border-radius: 25px;
+} */
+
+/*introduction of the circle starts here */
+/* span:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3.5px;
+    bottom: 2.8px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+  } */
+  
+  .Toggle_input:checked + span {
+    background-color: #a445ed;
+  }
+  
+  .Toggle_input:checked + span:before {
+    transform: translateX(29px);
+  }
+
+/* toggle styling ends here*/
+
+}
+
+.horz_line {
+    flex-grow: 1;
+    border-top: 2px solid #E9E9E9; /* You can adjust the color and thickness here */
+    margin-left: 20px; /* Adjust the space between text and line as needed */
+}
+
+.partOfSpeech {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.Monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.webaddress {
+    margin-top: 20px;
+}
+
+
+/* Tablet view*/
+@media screen and (min-width: 481px) and (max-width:1023px) {
+
+    .Banner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    } 
+
+    .displayForm {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f4f4f4;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px; 
+        margin-top: 20px;
+        height: 40px;
+        align-items: center;
+        border: 3px;
+        border-color: #00c853;
+    }
+
+    .lang {
+    
+        padding-right: 10px ;
+    }
+    
+    .lang_Option {
+        padding-right: 20px;
+    }
+    
+    .Menu {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+
+    .searchText {
+        width: 80%;
+        text-decoration-color: #2d2d2d;
+        height: 20px;
+        border: none;
+        background-color: #f4f4f4;
+        margin-left: 10px;
+        /* background-color: #00c853; */
+        
+    }
+
+    .toggle_bar {
+        width: 40px;
+        height: 20px;
+        background-color: grey;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 5px;
+     }
+
+     .toggled_bar {
+        width: 40px;
+        height: 20px;
+        background-color: #a445ed;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 5px;
+    }
+    
+    .untoggled_bar {
+        width: 40px;
+        height: 20px;
+        background-color: grey;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 5px;
+    }
+    
+     .toggle_circle {
+        color:white;
+        height: 40px;
+     }
+    
+     .toggled {
+        color:white;
+        height: 20px;
+        padding-left: 23px;
+     }
+
+.Toggle_input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+  
+  .Toggle_input:checked + span {
+    background-color: #a445ed;
+  }
+  
+  .Toggle_input:checked + span:before {
+    transform: translateX(29px);
+  }
+
+/* toggle styling ends here*/
+
+.keyboard {
+    width: 100%;
+
+
+}
+.word_display {
+    width: 100%;
+    /* padding-left: 2px;
+    padding-right: 2px; */
+    align-items: center;
+    justify-content: center;
+
+}
+.searchLogo {
+    position: relative;
+    padding-right: 10px;
+ }
+ 
+ .description { 
+     font-style: italic;
+ } 
+ 
+ 
+ .meaning_list {
+     list-style-position: outside;
+ }
+ 
+ .li {
+     padding-left: 0px;
+ }
+
+ .synonyms {
+    margin-left: 10px ;
+ }
+}
+
+.webaddress {
+    margin-top: 20px;
+}
+
+/* Desktop view */
+@media screen and (min-width: 1024px ) {
+    .Banner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    /*    padding: 10%, 10%; */
+    }    
+    
+    .lang {
+    
+        padding-right: 10px ;
+    }
+    
+    .lang_Option {
+        padding-right: 20px;
+    }
+
+    .lang_Option:after {
+        color:#a445ed;
+        content:'\f0d7';
+        right: 20px;
+        top: 15px;
+        pointer-events: none;
+    }
+   
+    
+    .Menu {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+
+    .toggle_bar {
+        width: 40px;
+        height: 20px;
+        background-color: grey;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 5px;
+     }
+    
+     .toggled_bar {
+        width: 40px;
+        height: 20px;
+        background-color: #a445ed;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 5px;
+    }
+    
+    .untoggled_bar {
+        width: 40px;
+        height: 20px;
+        background-color: grey;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: 5px;
+    }
+     .toggle_circle {
+        color:white;
+        height: 40px;
+     }
+    
+     .toggled {
+        color:white;
+        height: 20px;
+        padding-left: 23px;
+     }
+
+     .dark_select {
+        background-color: black;
+        color: #f4f4f4;
+        border: none;
+     }
+    
+     .light_select {
+        background-color: white;
+        color: black;
+        border: none;
+     }
+    /* styling below is for toggle*/
+   /*  label {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 25px;
+        padding-left: 5px;
+    }
+     */
+    .Toggle_input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+   /*  span {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #2c3e50;
+        transition: 0.3s;
+        border-radius: 25px;
+    } */
+    
+    /*introduction of the circle starts here */
+    /* span:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 3.5px;
+        bottom: 2.8px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: 0.3s;
+      }
+       */
+      .Toggle_input:checked + span {
+        background-color: #a445ed;
+      }
+      
+      .Toggle_input:checked + span:before {
+        transform: translateX(29px);
+      }
+    
+    /* toggle styling ends here*/
+    
+    .keyboard {
+        width: 100%;
+    
+    
+    }
+    .word_display {
+        width: 100%;
+        /* padding-left: 2px;
+        padding-right: 2px; */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .searchLogo {
+       position: relative;
+       padding-right: 10px;
+    }
+    
+    .displayForm {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f4f4f4;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px; 
+        margin-top: 5%;
+        height: 40px;
+        align-items: center;
+    }
+    
+    .searchText {
+        width: 90%;
+        text-decoration-color: #2d2d2d;
+        height: 20px;
+        border: none;
+        background-color: #f4f4f4;
+        margin-left: 10px;
+        
+    }
+
+    .webaddress {
+        margin-top: 20px;
+    }
+
+
+} 
